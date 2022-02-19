@@ -28,3 +28,17 @@ $obj3  = Connector::connect();
 $obj4  = Connector::connect();
 $obj5  = Connector::connect();
 // var_dump($obj1 === $obj2);
+
+echo "<br/><br/>";
+echo "<b>Classes Introduction</b><br/>";
+echo "Classes can have many (use) traits and (implement) intefaces, methods, properties. <br/>";
+echo "Can extend to maximum of 1 class( Abstract or Concrete). <br/><br/>";
+echo "Donot Have</br>";
+echo "Cannot have abstract methods and nested classes within. <br/>";
+
+
+
+
+
+
+
