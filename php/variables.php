@@ -40,7 +40,45 @@ echo $_SERVER['HTTP_X_FORWARDED_FOR']; // IP ADDRESS
 //Constant Variable
 echo "<b>Constant Variable NO dollar sign<br/>";
 define("PT", "Ten"). "<br/><br/>";
+const Connector = 10;
+echo PT ."<br/>";
+echo Connector ."<br/>";
+echo "<br/>";
 
-echo PT;
 
+echo "<b>Static Data</b><br/>";
+static $a = 1;
+echo $a . "<br />";
+
+class Demo {
+	public $data  = 'Apple';
+
+	const STATE   = 'constant';
+
+	static $name  = 'Prabin';
+
+
+	public function datas()
+	{
+		return [
+			$this->data,
+			self::STATE,
+			Demo::STATE,
+			self::$name,
+			Demo::$name,
+		];
+	}
+}
+
+$a = new Demo();
+echo $a->data . "<br />";
+echo "Constant : ". $a::STATE . "<br />";
+echo "Constant : ". Demo::STATE . "<br />";
+echo "Static : ". $a::$name . "<br />";
+echo "Static : ". Demo::$name . "<br />"; //colin colin ::
+
+//INSIDE FUNCTIONS
+echo "<pre>";
+var_dump($a->datas());
+echo "</pre>";
 
