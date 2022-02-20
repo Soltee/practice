@@ -2,6 +2,7 @@
 /** Variables */
 
 echo "<b>Variables <br/></b>";
+echo 'Variables are case sensitive.<br/>';
 
 //1. $var : represents any types
 echo '$var: is simple variable.<br/>';
@@ -81,4 +82,10 @@ echo "Static : ". Demo::$name . "<br />"; //colin colin ::
 echo "<pre>";
 var_dump($a->datas());
 echo "</pre>";
+
+//Case Sensitve
+echo "Case sensitive <br />"; //colin colin ::
+$lower  = 5;
+
+echo $lower; // 5
 

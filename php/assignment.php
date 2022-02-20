@@ -1,5 +1,5 @@
 <?php
-/** Type Hinting */
+/** Assignment */
 
 echo "<b>Assignment <br/></b>";
 
