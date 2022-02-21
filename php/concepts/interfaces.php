@@ -10,23 +10,6 @@ echo "It be implemented by classes to be used. (implements) <br/>";
 
 
 
-class Connector {
-	private static $obj;
-	private function __construct()
-	{
-		echo __CLASS__ . " initialize only once. <br/>";
-	}
-
-	public static function connect()
-	{
-		if(!isset(self::$obj)){
-			self::$obj = new Connector();
-		}
-		return self::$obj;
-	}
-}
-
-$obj1  = Connector::connect();
 
 
 
