@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Facade;
+// use App\Example;
+use Facades\App\Example;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +16,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    // Facades ********************/
+
+        //******* Alias 
+            // - config/app on alias array
+
+        //******* Implement Own Facade
+            // - Return error if __callStatic($name, $arguments) fn isn't there
+            // dd(Facade::touch([1, 2, 3])); 
+
+        //******* Real Time Facades
+            // - Use Facades\App\Example instead of App\Example;
+            // - Then laravel will create a facade and cache it 
+            // - The cached facade can be found in storage/framework/cache/{facadeName.php}
+            dd(Example::process());
+
 });
+
