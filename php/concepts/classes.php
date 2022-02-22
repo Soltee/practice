@@ -36,7 +36,13 @@ echo "Can extend to maximum of 1 class( Abstract or Concrete). <br/><br/>";
 echo "Donot Have</br>";
 echo "Cannot have abstract methods and nested classes within. <br/>";
 
+abstract class Animal
+{
 
+	
+}
+
+// $a = new Animal(); // Return Error cause cannot instantiate abstract classes
 
 
 
