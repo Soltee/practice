@@ -39,12 +39,31 @@ echo "Cannot have abstract methods and nested classes within. <br/>";
 abstract class Animal
 {
 
+	public function getAnimal()
+	{
+		echo "getAnimal<br/>";
+	}
 	
 }
 
 // $a = new Animal(); // Return Error cause cannot instantiate abstract classes
 
 
+class E extends Animal {
+	public function __construct()
+	{
+		foreach([
+			'name'  => "bishal",
+			'bank'  => 'muktinath'
+		] as $p)
+		{
+			echo $p . "<br />";
+		}
+	}
+}
+
+$e = new E();
+$e->getAnimal();
 
 
 
